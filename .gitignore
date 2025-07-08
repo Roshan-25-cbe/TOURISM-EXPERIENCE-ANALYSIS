@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+build/
+dist/
+develop-eggs/
+.eggs/
+*.egg-info/
+.env/
+.venv/ # Your virtual environment folder
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+.DS_Store # macOS specific
+
+# Data related
+Data/*.csv # Exclude raw CSVs if you don't want to track changes once loaded
+# If your raw data is in Excel, consider:
+# Data/*.xlsx
+
+# Processed data output
+processed_data/ # Folder where processed_data.pkl and .csv are saved
+Pickled_Data/ # Folder where raw_datasets.pkl is saved (from data_loading.py)
+
+# Model outputs
+models/ # Folder where trained models and preprocessors are saved
+
+# Evaluation results
+evaluation_results/ # Folder where evaluation summaries and reports are saved
+
+# EDA plots
+eda_plot/ # Folder where EDA plots are saved
+
+# Streamlit specific
+.streamlit/
+*.streamlit/

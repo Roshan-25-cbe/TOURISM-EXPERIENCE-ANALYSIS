@@ -1,0 +1,16 @@
+--- Model Evaluation Report ---
+
+Regression Model (LGBMRegressor):
+  MSE: 0.8593
+  RMSE: 0.6522
+  R2: 0.0876
+
+Classification Model (RandomForestClassifier):
+  Accuracy: 0.4645
+  Precision (weighted): 0.4623
+  Recall (weighted): 0.4645
+  F1-Score (weighted): 0.4629
+
+Recommendation System (SVD):
+  RMSE: 0.6522
+  MAE: 0.5072

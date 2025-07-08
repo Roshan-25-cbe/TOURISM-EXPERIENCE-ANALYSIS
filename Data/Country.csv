@@ -1,0 +1,166 @@
+CountryId,Country,RegionId
+0000,-,00
+0001,Cameroon,01
+0002,Chad,01
+0003,Rwanda,01
+0004,Ethiopia,02
+0005,Kenya,02
+0006,Mauritius,02
+0007,Seychelles,02
+0008,Sudan,02
+0009,Tanzania,02
+0010,Uganda,02
+0011,Zambia,02
+0012,Zimbabwe,02
+0013,Algeria,03
+0014,Egypt,03
+0015,Morocco,03
+0016,Tunisia,03
+0017,Angola,04
+0018,Botswana,04
+0019,Malawi,04
+0020,Mozambique,04
+0021,Namibia,04
+0022,South Africa,04
+0023,Burkina Faso,05
+0024,Cape Verde,05
+0025,Côte d'Ivoire,05
+0026,Ghana,05
+0027,NIGERIA,05
+0028,Senegal,05
+0029,Antigua and Barbuda,06
+0030,Bahamas,06
+0031,Barbados,06
+0032,Cayman Island,06
+0033,Cuba,06
+0034,Curacao,06
+0035,Dominican Republic,06
+0036,Grand Cayman,06
+0037,Jamaica,06
+0038,Puerto Rico,06
+0039,St Martin / St Maarten,06
+0040,Trinidad and Tobago,06
+0041,Turks and Caicos Islands,06
+0042,Belize,07
+0043,Costa Rica,07
+0044,Guatemala,07
+0045,Honduras,07
+0046,Nicaragua,07
+0047,Panama,07
+0048,Canada,08
+0049,Greenland,08
+0050,Mexico,08
+0051,United States,08
+0052,Argentina,09
+0053,Bolivia,09
+0054,Brazil,09
+0055,Chile,09
+0056,Colombia,09
+0057,Ecuador,09
+0058,Peru,09
+0059,Suriname,09
+0060,Uruguay,09
+0061,Venezuela,09
+0062,Asia,00
+0063,Armenia,10
+0064,Kazakhstan,10
+0065,Kyrgyzstan,10
+0066,Mongolia,10
+0067,Turkmenistan,10
+0068,Uzbekistan,10
+0069,China,11
+0070,Hong Kong,11
+0071,Japan,11
+0072,North Korea,11
+0073,South Korea,11
+0074,Taiwan,11
+0075,Bahrain,12
+0076,Cyprus,12
+0077,Iran,12
+0078,Iraq,12
+0079,Israel,12
+0080,Jordan,12
+0081,Kuwait,12
+0082,Lebanon,12
+0083,Libya,12
+0084,Oman,12
+0085,Palestine,12
+0086,Qatar,12
+0087,Saudi Arabia,12
+0088,Turkey,12
+0089,United Arab Emirates,12
+0090,Afghanistan,13
+0091,Bangladesh,13
+0092,Bhutan,13
+0093,India,13
+0094,Maldives,13
+0095,Nepal,13
+0096,Pakistan,13
+0097,Sri Lanka,13
+0098,Brunei Darussalam,14
+0099,Cambodia,14
+0100,East Timor,14
+0101,Indonesia,14
+0102,Laos,14
+0103,Malaysia,14
+0104,Myanmar,14
+0105,Philippines,14
+0106,Singapore,14
+0107,Thailand,14
+0108,Vietnam,14
+0109,Australia,15
+0110,Fiji,16
+0111,French Polynesia,16
+0112,Mariana Islands,16
+0113,Marshall Islands,16
+0114,New Caledonia,16
+0115,New Zealand,16
+0116,Papua New Guinea,16
+0117,Solomon Islands,16
+0118,Tonga,16
+0119,Vanuatu,16
+0120,Europe,00
+0121,Austria,17
+0122,Croatia,17
+0123,Czech Republic,17
+0124,Estonia,17
+0125,Germany,17
+0126,Hungary,17
+0127,Latvia,17
+0128,Lithuania,17
+0129,Luxembourg,17
+0130,Poland,17
+0131,Romania,17
+0132,Serbia,17
+0133,Slovakia,17
+0134,Slovenia,17
+0135,Switzerland,17
+0136,Azerbaijan,18
+0137,Belarus,18
+0138,Georgia,18
+0139,Russia,18
+0140,Ukraine,18
+0141,Denmark,19
+0142,Finland,19
+0143,Iceland,19
+0144,Norway,19
+0145,Sweden,19
+0146,Albania,20
+0147,Bosnia and Herzegovina,20
+0148,Bulgaria,20
+0149,Cyprus,20
+0150,Greece,20
+0151,Italy,20
+0152,Malta,20
+0153,Moldova,20
+0154,Montenegro,20
+0155,Portugal,20
+0156,Republic of North Macedonia,20
+0157,Spain,20
+0158,Belgium,21
+0159,France,21
+0160,Ireland,21
+0161,Monaco,21
+0162,Netherlands,21
+0163,United Kingdom,21
+0164,Yemen,12
