@@ -54,6 +54,7 @@ The project is logically organized into several Python scripts for clarity and m
 
 * **requirements.txt:** Lists all Python library dependencies.
 
+
 ## ⚙️ How to Run Locally
 
 Follow these steps to set up and launch the project on your machine:
@@ -73,28 +74,28 @@ Follow these steps to set up and launch the project on your machine:
 
 3.  **Place Raw Data Files:**
    
-Create a folder named Data in the root of your project directory.
-Place all your original raw CSV dataset files into this Data folder:
+    Create a folder named Data in the root of your project directory.
+    Place all your original raw CSV dataset files into this Data folder:
 
-*City.csv
+    *City.csv
 
-*Continent.csv
+    *Continent.csv
 
-*Country.csv
+    *Country.csv
 
-*Mode.csv
+    *Mode.csv
 
-*Region.csv
+    *Region.csv
 
-*Transaction.csv
+    *Transaction.csv
 
-*Type.csv
+    *Type.csv
 
-*Updated_Item.csv
+    *Updated_Item.csv
 
-*User.csv
-
-Your project structure should look like TOURISM-EXPERIENCE-ANALYSIS/Data/Transaction.csv.
+    *User.csv
+  
+    Your project structure should look like TOURISM-EXPERIENCE-ANALYSIS/Data/Transaction.csv.
 
 4.  **Install Dependencies:**
     With your virtual environment active, install all required Python libraries.
@@ -145,6 +146,7 @@ Your project structure should look like TOURISM-EXPERIENCE-ANALYSIS/Data/Transac
 * **Recommendation System (SVD):**
     * Root Mean Squared Error (RMSE): **0.6522**
     * Mean Absolute Error (MAE): **0.5072**
+
 
 ## 💡 Future Enhancements
 
