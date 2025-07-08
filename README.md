@@ -55,6 +55,8 @@ The project is logically organized into several Python scripts for clarity and m
 * **requirements.txt:** Lists all Python library dependencies.
 
 
+
+
 ## ⚙️ How to Run Locally
 
 Follow these steps to set up and launch the project on your machine:
@@ -65,12 +67,15 @@ Follow these steps to set up and launch the project on your machine:
     cd TOURISM-EXPERIENCE-ANALYSIS
     ```
 
+
 2.  **Create and Activate a Virtual Environment:**
     ```bash
     python -m venv .venv
     ```
     * **Windows (PowerShell/CMD):** `.\.venv\Scripts\activate`
     * **macOS/Linux (Bash/Zsh):** `source ./.venv/bin/activate`
+
+
 
 3.  **Place Raw Data Files:**
    
@@ -97,6 +102,8 @@ Follow these steps to set up and launch the project on your machine:
   
     Your project structure should look like TOURISM-EXPERIENCE-ANALYSIS/Data/Transaction.csv.
 
+
+
 4.  **Install Dependencies:**
     With your virtual environment active, install all required Python libraries.
     ```bash
@@ -109,6 +116,8 @@ Follow these steps to set up and launch the project on your machine:
         pip install scikit-surprise
         ```
 
+
+
 5.  **Execute Project Pipeline:**
     Run the following scripts sequentially from your terminal (with the virtual environment activated) to process data, train models, and evaluate:
 
@@ -120,12 +129,16 @@ Follow these steps to set up and launch the project on your machine:
     python model_evaluation.py
     ```
 
+
+
 6.  **Launch the Streamlit Application:**
     Once all the above scripts have completed successfully, launch the interactive dashboard:
     ```bash
     streamlit run app.py
     ```
     This command will automatically open the application in your default web browser (usually `http://localhost:8501`).
+
+
 
 ## 📈 Model Performance Highlights
 
@@ -148,6 +161,8 @@ Follow these steps to set up and launch the project on your machine:
     * Mean Absolute Error (MAE): **0.5072**
 
 
+
+
 ## 💡 Future Enhancements
 
 * **Advanced Feature Engineering:** Develop features like user average ratings, attraction popularity scores, or time-decay features to potentially improve model performance, especially for regression and classification.
@@ -163,15 +178,20 @@ Follow these steps to set up and launch the project on your machine:
 * **Data Refresh Mechanism:** Implement a way to periodically update the raw data and retrain models.
 
 
+
 ## Presentation
 
 The project has been presented, and you can find the slides [here](https://1drv.ms/p/c/ff0f2d98614978aa/EWWBB8DScz1EqTiNXyb1TnMB6PUvPfZz5-GJyxCUvWpa7g?e=BuyBjN)
+
+
 
 ## 🧑‍💻 Project Author
 
 * **Roshan**
 * GitHub: [https://github.com/Roshan-25-cbe/TOURISM-EXPERIENCE-ANALYSIS.git](https://github.com/Roshan-25-cbe/TOURISM-EXPERIENCE-ANALYSIS.git)
 * LinkedIn: [www.linkedin.com/in/roshan-angamuthu-195ba230a](www.linkedin.com/in/roshan-angamuthu-195ba230a)
+
+
 
 ## 📧 Contact
 
