@@ -1,88 +1,78 @@
-🗺️ Tourism Experience Analytics: Explore, Predict & Recommend
-✨ Introduction
-This project delivers an interactive platform for the tourism industry, powered by machine learning and data analytics. It allows users to explore tourism trends, predict user behavior, and receive personalized attraction recommendations, aiming to enhance traveler experiences and inform business strategies.
+# 🗺️ Tourism Experience Analytics: Explore, Predict & Recommend
 
-🚀 Key Features & Objectives
-Interactive Analytics Dashboard: Visualize popular attractions, user demographics, and travel patterns across regions.
+## ✨ Introduction
 
-Predict User Visit Mode: Forecast the purpose of a user's visit (e.g., Business, Family, Couples, Friends) based on their profile and trip details.
+This project delivers an interactive platform for the tourism industry, powered by machine learning and data analytics. It allows users to **explore tourism trends**, **predict user behavior**, and receive **personalized attraction recommendations**, aiming to enhance traveler experiences and inform business strategies.
 
-Predict Attraction Rating: Estimate the rating a user is likely to give an attraction, helping gauge satisfaction and identify areas for improvement.
+## 🚀 Key Features & Objectives
 
-Personalized Recommendations: Suggest attractions tailored to individual user preferences and historical data.
+* **Interactive Analytics Dashboard:** Visualize popular attractions, user demographics, and travel patterns across regions.
+* **Predict User Visit Mode:** Forecast the purpose of a user's visit (e.g., Business, Family, Couples, Friends) based on their profile and trip details.
+* **Predict Attraction Rating:** Estimate the rating a user is likely to give an attraction, helping gauge satisfaction and identify areas for improvement.
+* **Personalized Recommendations:** Suggest attractions tailored to individual user preferences and historical data.
 
-📊 Technologies Used
-Python: The core programming language.
+## 📊 Technologies Used
 
-Streamlit: For building the interactive web application.
+* **Python:** The core programming language.
+* **Streamlit:** For building the interactive web application.
+* **Pandas, NumPy:** For efficient data manipulation and numerical operations.
+* **Scikit-learn:** For machine learning model development (preprocessing, regression, classification).
+* **LightGBM (`LGBMRegressor`):** A high-performance gradient boosting framework used for predicting attraction ratings.
+* **RandomForest (`RandomForestClassifier`):** A robust ensemble learning method used for predicting visit modes.
+* **Scikit-Surprise (`SVD`):** A specialized library for building and evaluating recommendation systems.
+* **Matplotlib, Seaborn:** For data visualization in EDA.
 
-Pandas, NumPy: For efficient data manipulation and numerical operations.
+## 📂 Project Structure
 
-Scikit-learn: For machine learning model development (preprocessing, regression, classification).
-
-LightGBM (LGBMRegressor): A high-performance gradient boosting framework used for predicting attraction ratings.
-
-RandomForest (RandomForestClassifier): A robust ensemble learning method used for predicting visit modes.
-
-Scikit-Surprise (SVD): A specialized library for building and evaluating recommendation systems.
-
-Matplotlib, Seaborn: For data visualization in EDA.
-
-📂 Project Structure
 The project is logically organized into several Python scripts for clarity and modularity:
 
-data_loading.py: Loads raw CSV datasets and saves them as optimized .pkl format for faster loading.
+* data_loading.py: Loads raw CSV datasets and saves them as optimized .pkl format for faster loading.
 
-data_preprocessing.py: Cleans, preprocesses, merges data, and performs feature engineering. Saves processed data (.pkl and a viewable .csv sample).
+* data_preprocessing.py: Cleans, preprocesses, merges data, and performs feature engineering. Saves processed data (.pkl and a viewable .csv sample).
 
-eda.py: Conducts comprehensive Exploratory Data Analysis, generating and saving insightful visualizations.
+* eda.py: Conducts comprehensive Exploratory Data Analysis, generating and saving insightful visualizations.
 
-model_training.py: Trains the machine learning models (Regression, Classification, Recommendation) and saves them along with necessary components (scalers, feature lists, label encoder).
+* model_training.py: Trains the machine learning models (Regression, Classification, Recommendation) and saves them along with necessary components (scalers, feature lists, label encoder).
 
-model_evaluation.py: Evaluates the performance of the trained models and generates detailed reports.
+* model_evaluation.py: Evaluates the performance of the trained models and generates detailed reports.
 
-app.py: The main Streamlit application, serving as the interactive user interface.
+* app.py: The main Streamlit application, serving as the interactive user interface.
 
-Data/: Directory containing raw CSV data files (e.g., Transaction.csv, User.csv).
+* Data/: Directory containing raw CSV data files (e.g., Transaction.csv, User.csv).
 
-Pickled_Data/: Directory for raw data in .pkl format (auto-generated by data_loading.py).
+* Pickled_Data/: Directory for raw data in .pkl format (auto-generated by data_loading.py).
 
-processed_data/: Directory for cleaned and processed data (processed_data.pkl, processed_data.csv) (auto-generated by data_preprocessing.py).
+* processed_data/: Directory for cleaned and processed data (processed_data.pkl, processed_data.csv) (auto-generated by data_preprocessing.py).
 
-eda_plot/: Directory for saved EDA visualizations (.png) (auto-generated by eda.py).
+* eda_plot/: Directory for saved EDA visualizations (.png) (auto-generated by eda.py).
 
-models/: Directory for trained machine learning models and supporting files (.pkl) (auto-generated by model_training.py).
+* models/: Directory for trained machine learning models and supporting files (.pkl) (auto-generated by model_training.py).
 
-evaluation_results/: Directory for model performance reports (.pkl, .txt) (auto-generated by model_evaluation.py).
+* evaluation_results/: Directory for model performance reports (.pkl, .txt) (auto-generated by model_evaluation.py).
 
-.gitignore: Specifies files and directories to be excluded from version control.
+* .gitignore: Specifies files and directories to be excluded from version control.
 
-requirements.txt: Lists all Python library dependencies.
+* requirements.txt: Lists all Python library dependencies.
 
-⚙️ How to Run Locally
-Follow these steps to set up and launch the project on your local machine:
+## ⚙️ How to Run Locally
 
-1. Clone the Repository
-Open your terminal (Git Bash, PowerShell, or Command Prompt) and run:
+Follow these steps to set up and launch the project on your machine:
 
-git clone https://github.com/Roshan-25-cbe/TOURISM-EXPERIENCE-ANALYSIS.git
-cd TOURISM-EXPERIENCE-ANALYSIS
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/Roshan-25-cbe/TOURISM-EXPERIENCE-ANALYSIS.git
+    cd TOURISM-EXPERIENCE-ANALYSIS
+    ```
 
-2. Create and Activate a Python Virtual Environment
-It is highly recommended to use a virtual environment to manage dependencies.
-(Note: Python 3.9, 3.10, or 3.11 are generally more stable for scikit-surprise==1.1.4 compared to Python 3.12, although it successfully installed for you on 3.12.)
+2.  **Create and Activate a Virtual Environment:**
+    ```bash
+    python -m venv .venv
+    ```
+    * **Windows (PowerShell/CMD):** `.\.venv\Scripts\activate`
+    * **macOS/Linux (Bash/Zsh):** `source ./.venv/bin/activate`
 
-python -m venv .venv
-
-On Windows (Command Prompt / PowerShell):
-
-.\.venv\Scripts\Activate
-
-On macOS / Linux (Bash / Zsh):
-
-source ./.venv/bin/activate
-
-3. Place Raw Data Files
+3.  **Place Raw Data Files:**
+   
 Create a folder named Data in the root of your project directory.
 Place all your original raw CSV dataset files into this Data folder:
 
@@ -106,84 +96,82 @@ User.csv
 
 Your project structure should look like TOURISM-EXPERIENCE-ANALYSIS/Data/Transaction.csv.
 
-4. Install Dependencies
-With your virtual environment active, install all required Python libraries.
+4.  **Install Dependencies:**
+    With your virtual environment active, install all required Python libraries.
+    ```bash
+    pip install -r requirements.txt
+    ```
+    * *If you encounter `numpy` compatibility issues (e.g., `AttributeError: float object has no attribute 'rmse'` or `ImportError: numpy.core.multiarray failed to import`), try reinstalling `numpy` and `scikit-surprise` specifically:*
+        ```bash
+        pip uninstall scikit-surprise numpy -y
+        pip install numpy==1.26.4 # Compatible version
+        pip install scikit-surprise
+        ```
 
-pip install -r requirements.txt
+5.  **Execute Project Pipeline:**
+    Run the following scripts sequentially from your terminal (with the virtual environment activated) to process data, train models, and evaluate:
 
-(If scikit-surprise still causes build errors on Python 3.12 despite 1.1.4, you might consider creating your virtual environment with Python 3.11 or 3.10.)
+    ```bash
+    python data_loading.py
+    python data_preprocessing.py
+    python eda.py
+    python model_training.py
+    python model_evaluation.py
+    ```
 
-5. Run the Data Pipeline Scripts (in order)
-Execute each script sequentially from your terminal within the activated virtual environment. This will load, preprocess data, train models, and generate EDA plots.
+6.  **Launch the Streamlit Application:**
+    Once all the above scripts have completed successfully, launch the interactive dashboard:
+    ```bash
+    streamlit run app.py
+    ```
+    This command will automatically open the application in your default web browser (usually `http://localhost:8501`).
 
-python data_loading.py --save_raw_pickle
-python data_preprocessing.py
-python eda.py
-python model_training.py
-python model_evaluation.py
+## 📈 Model Performance Highlights
 
-These commands will create Pickled_Data/, processed_data/, models/, eda_plot/, and evaluation_results/ directories with the necessary files.
+*(Metrics based on evaluation on a test set)*
 
-6. Launch the Streamlit Application
-Once all the above scripts have completed successfully, launch the interactive dashboard:
+* **Regression Model (LGBMRegressor) for Attraction Rating:**
+    * Mean Squared Error (MSE): **0.8593**
+    * Root Mean Squared Error (RMSE): **0.9270** (Average prediction error of ~0.5 stars on a 1-5 scale)
+    * R-squared (R2): **0.0876** 
 
-streamlit run app.py
+* **Classification Model (RandomForestClassifier) for Visit Mode:**
+    * Accuracy: **0.4642** (~50% correct predictions)
+    * Precision (weighted): **0.4626**
+    * Recall (weighted): **0.4642**
+    * F1-Score (weighted): **0.4630**
+    * *Note: The classification model's accuracy, while functional, indicates challenges due to significant class imbalance and dataset complexity. Performance varies across different visit modes. Further optimization would focus here.*
 
-This command will automatically open the application in your default web browser (usually http://localhost:8501 or http://localhost:8506).
+* **Recommendation System (SVD):**
+    * Root Mean Squared Error (RMSE): **0.6522**
+    * Mean Absolute Error (MAE): **0.5072**
 
-📈 Model Performance Highlights
-(Metrics based on evaluation on a test set from model_evaluation.py output)
+## 💡 Future Enhancements
 
-Regression Model (LGBMRegressor) for Attraction Rating:
+* **Advanced Feature Engineering:** Develop features like user average ratings, attraction popularity scores, or time-decay features to potentially improve model performance, especially for regression and classification.
 
-Mean Squared Error (MSE): 0.8593
+* **Hybrid Recommendation Model:** Implement content-based features (e.g., one-hot encode AttractionType, User_Continent_Name) for a library like LightFM to build a truly hybrid recommender system that leverages both user-item interactions and content attributes.
 
-Root Mean Squared Error (RMSE): 0.9270
+* **Hyperparameter Optimization:** Conduct a more exhaustive search for optimal model parameters (n_estimators, learning_rate, etc.) to boost accuracy.
 
-R-squared (R2): 0.0876
+* **Alternative Algorithms:** Experiment with other machine learning algorithms (e.g., XGBoost, neural networks) for prediction tasks.
 
-Classification Model (RandomForestClassifier) for Visit Mode:
+* **User Interface Refinements:** Enhance the Streamlit UI with more interactive plots, user profiles, and potentially a more dynamic input system for new users.
 
-Accuracy: 0.4642
+* **Data Refresh Mechanism:** Implement a way to periodically update the raw data and retrain models.
 
-Precision (weighted): 0.4626
 
-Recall (weighted): 0.4642
+## Presentation
 
-F1-Score (weighted): 0.4630
+The project has been presented, and you can find the slides [here](https://1drv.ms/p/c/ff0f2d98614978aa/EWWBB8DScz1EqTiNXyb1TnMB6PUvPfZz5-GJyxCUvWpa7g?e=BuyBjN)
 
-(Note: The classification model's accuracy, while functional, indicates challenges due to significant class imbalance and dataset complexity. Performance varies across different visit modes. Further optimization would focus here.)
+## 🧑‍💻 Project Author
 
-Recommendation System (SVD):
+* **Roshan**
+* GitHub: [https://github.com/Roshan-25-cbe/Tourism-Experience-Analytics.git](https://github.com/Roshan-25-cbe/Tourism-Experience-Analytics.git)
+* LinkedIn: [www.linkedin.com/in/roshan-angamuthu-195ba230a](www.linkedin.com/in/roshan-angamuthu-195ba230a)
 
-Root Mean Squared Error (RMSE): 0.6522
+## 📧 Contact
 
-Mean Absolute Error (MAE): 0.5072
-
-💡 Future Enhancements
-Advanced Feature Engineering: Develop features like user average ratings, attraction popularity scores, or time-decay features to potentially improve model performance, especially for regression and classification.
-
-Hybrid Recommendation Model: Implement content-based features (e.g., one-hot encode AttractionType, User_Continent_Name) for a library like LightFM to build a truly hybrid recommender system that leverages both user-item interactions and content attributes.
-
-Hyperparameter Optimization: Conduct a more exhaustive search for optimal model parameters (n_estimators, learning_rate, etc.) to boost accuracy.
-
-Alternative Algorithms: Experiment with other machine learning algorithms (e.g., XGBoost, neural networks) for prediction tasks.
-
-User Interface Refinements: Enhance the Streamlit UI with more interactive plots, user profiles, and potentially a more dynamic input system for new users.
-
-Data Refresh Mechanism: Implement a way to periodically update the raw data and retrain models.
-
-Presentation
-The project has been presented, and you can find the slides here
-
-🧑‍💻 Project Author
-Roshan
-
-GitHub: https://github.com/Roshan-25-cbe/TOURISM-EXPERIENCE-ANALYSIS.git
-
-LinkedIn: www.linkedin.com/in/roshan-angamuthu-195ba230a
-
-📧 Contact
 For any inquiries, collaboration opportunities, or feedback, feel free to connect:
-
-Email: roshana36822@gmail.com
+* Email: [roshana36822@gmail.com](mailto:roshana36822@gmail.com)
